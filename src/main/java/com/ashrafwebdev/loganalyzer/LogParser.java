@@ -5,4 +5,8 @@ public class LogParser{
         String[] parts = line.split(" ");
         return parts[0];
     }
+
+    public int textToNumber(String text){
+        return Integer.parseInt(text);
+    }
 }
