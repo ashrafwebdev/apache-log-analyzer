@@ -12,5 +12,11 @@ public class Main{
         System.out.println(requestParts[0]); // Method
         System.out.println(requestParts[1]); // Path
 
+        String[] statusAndBytes = parser.extractStatusAndBytes(sampleLine);
+        int statusCode = parser.textToNumber(statusAndBytes[0]);
+        long bytesSent = parser.textToNumber(statusAndBytes[1]);
+        System.out.println(statusCode);
+        System.out.println(bytesSent);
+
     }
 }
