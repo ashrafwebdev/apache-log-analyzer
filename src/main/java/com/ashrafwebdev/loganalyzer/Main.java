@@ -8,5 +8,9 @@ public class Main{
         String ip = parser.extractIpAddress(sampleLine);
         System.out.println(ip);
 
+        String[] requestParts = parser.extractRequestParts(sampleLine);
+        System.out.println(requestParts[0]); // Method
+        System.out.println(requestParts[1]); // Path
+
     }
 }
